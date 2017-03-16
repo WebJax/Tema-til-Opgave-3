@@ -1,0 +1,105 @@
+/*
+Theme Name: CMS Kursus
+Theme URI:
+Author: Jacob Thygesen
+Author URI: https://jaxweb.dk/
+Description: CMS kursus temaet er oprettet for at give et indblik i hvad der skal til for at oprette et tema til wordpress fra grunden.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cmskursus
+Tags: testing
+*/
+
+/* Header */
+.header-image {
+
+}
+
+.header-image img {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.menu-container {
+  width: 100vw;
+  background-color: #bbb;
+  height: 3.5rem;
+}
+
+.menu-hovedmenu-container {
+  padding-top: 1rem;
+}
+
+ul.menu {
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+ul.menu:before,
+ul.menu:after {
+  content: "";
+  display: table;
+}
+
+ul.menu:after {
+  clear: both;
+}
+
+ul.menu > li {
+  float: left;
+  background: #e9e9e;
+  padding: 0 2rem 0 0;
+  margin: 0;
+}
+
+/* page, single */
+.page-row {
+  margin: 3rem 0 0;
+}
+
+.page-row h1 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.pagesmall {
+  margin: 0 0 2rem;
+  display: block;
+  font-style: italic;
+}
+
+/* Hvis man er logged ind */
+.edit-logged-in {
+  height: 20px;
+  line-height: 20px;
+  background-color: #00ff00;
+  color: #000;
+  border-color: #00ff00;
+  padding: 0 5px;
+}
+
+/* Skeleton overrides */
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
