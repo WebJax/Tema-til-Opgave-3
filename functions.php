@@ -28,7 +28,7 @@ function opgavetre_setup() {
   $args = array(
   	'width'         => 980,
   	'height'        => 200,
-  	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+  	'default-image' => get_template_directory_uri() . '/assets/images/header.jpg',
   );
 
   add_theme_support( 'custom-header', $args );
@@ -54,8 +54,8 @@ add_action( 'after_setup_theme', 'opgavetre_setup' );
  */
 function opgave_tre_tema_scripts() {
   // Skeleton css indlæses efter nomalize for ikke at blive overskrevet af normaliseringen
-  wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
-  wp_enqueue_style( 'skeleton', get_template_directory_uri() . '/css/skeleton.css' );
+  wp_enqueue_style( 'normalize', get_template_directory_uri() . '/assets/css/normalize.css' );
+  wp_enqueue_style( 'skeleton', get_template_directory_uri() . '/assets/css/skeleton.css' );
   wp_enqueue_style( 'raleway-google-font', '//fonts.googleapis.com/css?family=Raleway:400,300,600' );
   // indlæsning af temaets style.css lægges til sidst, så der kan overrides på skeleton og normalize
   wp_enqueue_style( 'theme-style', get_stylesheet_uri() );

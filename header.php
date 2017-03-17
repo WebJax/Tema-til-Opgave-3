@@ -14,10 +14,10 @@
 </head>
 <body <?php body_class();?>> <!-- tilføj de css klasser der er defineret til body-tag'et -->
   <header>
-    <div class="header-image" style="background: url('<?php echo get_template_directory_uri() . '/images/background.jpg'; ?>');">
+    <div class="header-image" style="background: url('<?php echo get_template_directory_uri() . '/assets/images/background.jpg'; ?>');">
       <!-- indsæt html-markup til header-billede eller Indlægs-billede -->
       <?php
-      $postID = get_post();
+      $postID = get_post(); // Hent første post og check om der er et indlægs-billede. Derved undgåes at oprette et loop
       if ( has_post_thumbnail($postID->ID) ) {
         the_post_thumbnail($postID->ID);
       } else {
