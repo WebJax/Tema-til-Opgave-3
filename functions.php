@@ -3,7 +3,24 @@
  * Opgave 3 tema setup
  */
 
+
+// Registrer sidebar widget område
+function opgavetre_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Hoved Sidebar', 'theme-slug' ),
+        'id' => 'sidebar-1',
+        'description' => __( 'Widgets i dette område vil blive vist i højre side.', 'opgavetre' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widget-title">',
+	'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'opgavetre_widgets_init' );
+
 function opgavetre_setup() {
+  // Der gøres brug af widgets
+
   // Der gøres brug af post_thumbnail
   add_theme_support( 'post-thumbnails' );
 

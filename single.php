@@ -3,12 +3,12 @@ get_header(); ?>
 
     <div class="row page-row">
       <div class="eight columns">
-        <!-- the_loop starter her -->
+        <!-- loop'et starter her -->
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <h1 id="post-<?php the_ID(); ?>" class="pagetitle">
             <?php the_title(); ?>
           </h1>
-          <small class="pagesmall">Udgivet den <?php the_time('j. F Y') ?> af <strong><?php the_author() ?></strong></small>
+          <small class="pagesmall">Skrevet af <strong><?php the_author() ?></strong> den <?php the_time('j. F Y') ?></small>
           <div class="entry">
             <?php the_content(); ?>
           </div>
